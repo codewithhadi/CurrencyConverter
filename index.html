@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <center>
+        <h1>Currency Converter</h1>
+        </center>
+        <div class="parent">
+            <center>
+        <div class="selected">
+            <h3>Selected Currency</h3>
+<select id="select" onchange="test()">
+    <option value="PKR">PKR</option>
+    <option value="INR">INR</option>
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+</select>
+<input type="text" placeholder="Type Value" id="input">
+
+        </div>
+        <div class="converted">
+            <h3>Converted Currency</h3>
+            <select id="convert" onchange="test1()"> 
+                <option value="EUR">EUR</option>
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="PKR">PKR</option>
+            </select>
+        </div>
+        <button id="submit">Submit</button>
+        <p id="p"></p>
+    </center>
+    </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
